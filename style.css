@@ -1,0 +1,318 @@
+/*
+ Theme Name:   Integer Child Theme
+ description: >-
+   A child theme of the Integer WordPress theme
+ Author:       Calvin LeGassick
+ Template:     integer
+ Version:      1.0.0
+*/
+
+html {
+    font-family: Lato;
+    letter-spacing: 1.98px;
+}
+
+h1, h2 {
+    font-family: Utopia;
+    font-weight: bold;
+    font-size: 28px !important;
+}
+
+.site-header {
+    max-width: 768px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 70px;
+    padding-bottom: 45px;
+
+    border-bottom: solid 1px black;
+}
+
+.header-logo-link {
+    position: relative;
+    margin: auto;
+}
+
+.header-logo {
+    width: 90px;
+    height: auto;
+}
+
+.site-branding {
+    margin-left: 30px;
+    max-width: 100%;
+}
+
+.site-title a {
+    background-image: none;
+    font-family: Utopia;
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.96px;
+    text-shadow: none;
+}
+
+.site-title a:hover, .site-title a:focus {
+    color: black;
+    background-image: none;
+    text-shadow: none;
+}
+
+ .site-description {
+    font-family: Calibre;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+
+    color: #5A5A5A;
+    opacity: 1;
+ }
+
+ .blogroll-column {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.cat-links {
+    background-color: #F0F0F0;
+    text-align: center;
+    padding: 2px 15px;
+    border-radius: 5px;
+    color: #787878;
+    margin-right: 30px;
+}
+
+.entry-meta-item:after {
+    content: '';
+    margin: 0;
+}
+
+.entry-meta-item a:hover, .entry-meta-item a:after {
+    color: #a7a7a7;
+}
+
+.blogroll-item__content p:first-child { 
+    -webkit-mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 100%);
+}
+
+.blogroll-item__title a:hover, .blogroll-item__title a:focus {
+    color: black;
+}
+
+/*article.blogroll-item.post {
+    max-width: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 0;
+}*/
+
+article.blogroll-item.post {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+article.post {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 0;
+}
+
+.post, .back-to-indexed {
+    max-width: 768px;
+    position: relative;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*padding: 0 20px;*/
+}
+
+.blogroll-content {
+    max-width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+}
+
+.link-more {
+    color: #03a9f4;
+}
+
+.blogroll-item .more-link {
+    font-family: Calibre;
+    font-style: italic;
+    font-size: 18px;
+    color: #4A90E2;
+    background-image: none;
+    text-shadow: none;
+    text-decoration: underline;
+}
+
+.even {
+    background-color: #F5F5F5;
+}
+
+.odd {
+    background-color: #FFFFFF;
+}
+
+.blogroll-column article:last-child {
+    padding-bottom: 80px;
+}
+
+.site-footer {
+    margin: 0;
+    height: 90px;
+    background-color: #333333;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 768px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+}
+
+.footer-logo {
+    width: auto;
+    height: 50px;
+}
+
+.footer-title {
+    font-size: 24px;
+    letter-spacing: 1.13px;
+    font-family: Utopia;
+    font-style: italic;
+    font-weight: 400;
+    color: white;
+}
+
+a:hover.footer-title, a:focus.footer-title {
+    color: white;
+    background-image: none;
+    text-shadow: none;
+}
+
+.footer-twitter, .footer-linkedin {
+    width: auto;
+    height: 20px;
+    margin-left: 20px;
+}
+
+ @media (max-width: 768px) {
+    .site-description {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .site-title a {
+        font-size: 28px; 
+    }
+
+    .header-logo {
+        width: 60px;
+    }
+
+    .footer-logo {
+        height: 30px;
+    }
+
+    .footer-title {
+        font-size: 18px;
+    }
+
+    .footer-twitter, .footer-linkedin {
+        height: 15px;
+    }
+}
+
+ @media (max-width: 378px) {
+    .site-header {
+        text-align: center;
+    }
+}
+
+
+.entry-header {
+    padding: 0;
+}
+
+.entry-title {
+    margin: 0;
+    max-width: none;
+    text-align: left;
+    margin-bottom: 1.25rem;
+}
+
+.entry-meta-before-title {
+    text-align: left;
+}
+
+.entry-content {
+    margin: 0 !important;
+    line-height: 30px;
+}
+
+.entry-content > *:not(pre):not(ul):not(ol) {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+}
+
+.site-main {
+    padding-top: 0 !important;
+}
+
+.entry-meta.entry-meta-index {
+    margin-bottom: 1.325rem;
+}
+
+a , .entry-content a {
+    background-image: none !important;
+    text-shadow: none !important;
+}
+
+.entry-content a, .entry-content a:hover, .entry-content a:focus {
+    text-decoration: underline;
+}
+
+a {
+outline: 0;
+outline: none;
+}
+
+a:hover, a:active, a:focus, *:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+/** a:hover, * a:active {
+    color: inherit !important;
+}*/
+
+.back-to-indexed {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #4A90E2;
+    letter-spacing: 1.98px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.entry-content img {
+    width: 100%;
+    margin: 0;
+    border: solid 1px black;
+}
